@@ -1,7 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const useHideOnScroll = () => {
   const [show, setShow] = useState(true);
@@ -59,19 +58,6 @@ const Navbar = () => {
           >
             Qui sommes-nous?
           </Link>
-          <a className="bg-[#426B1F] inline-block p-4 rounded-lg relative">
-            <span className="flex h-2 w-8 items-center justify-center">
-              <Link href="https://waiting-charlie.vercel.app/">
-                <Image
-                  src="/game.png"
-                  width={25}
-                  height={25}
-                  alt="Game controller"
-                  className="align-middle"
-                />
-              </Link>
-            </span>
-          </a>
         </div>
       </div>
     </nav>
