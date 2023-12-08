@@ -61,7 +61,15 @@ const Navbar = () => {
           </Link>
           <a className="bg-[#426B1F] inline-block p-4 rounded-lg relative">
             <span className="flex h-2 w-8 items-center justify-center">
-              <Image src="/game.png" width={25} height={25} alt="Game controller" className="align-middle" />
+              <Link href="https://waiting-charlie.vercel.app/">
+                <Image
+                  src="/game.png"
+                  width={25}
+                  height={25}
+                  alt="Game controller"
+                  className="align-middle"
+                />
+              </Link>
             </span>
           </a>
         </div>
