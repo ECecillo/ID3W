@@ -46,7 +46,7 @@ const Navbar = () => {
     <nav className={navbarClasses}>
       <div className="container mx-auto flex justify-between items-center p-4">
         <span className="font-semibold text-xl tracking-tight text-[#426B1F]">Éco Complot</span>
-        <div className="space-x-4">
+        <div className="flex space-x-4 items-center">
           <Link
             href="/"
             className="text-gray-900 hover:text-gray-800 hover:border-b-2 hover:border-black duration-500"
@@ -60,8 +60,16 @@ const Navbar = () => {
             Qui sommes-nous?
           </Link>
           <a className="bg-[#426B1F] inline-block p-4 rounded-lg relative">
-            <span className="flex h-12 w-12 items-center justify-center">
-              <Image src="/game.png" width={50} height={50} alt="Game controller" className="align-middle" />
+            <span className="flex h-2 w-8 items-center justify-center">
+              <a href='#'>
+                <Image
+                  src="/game.png"
+                  width={25}
+                  height={25}
+                  alt="Game controller"
+                  className="align-middle"
+                />
+              </a>
             </span>
           </a>
         </div>
